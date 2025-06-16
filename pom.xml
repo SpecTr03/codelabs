@@ -22,6 +22,7 @@
         <module>Comunicacion Sincrona/pedido-service</module>
         <module>Comunicacion Asincrona/producto-service</module>
         <module>Comunicacion Asincrona/pedido-service</module>
+        <module>Virtual Threads/virtual-threads</module>
     </modules>
 
     <properties>
