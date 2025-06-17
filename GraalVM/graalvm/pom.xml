@@ -6,11 +6,13 @@
 		<groupId>org.scf.springcloud.msvc</groupId>
 		<artifactId>Codelabs</artifactId>
 		<version>1.0-SNAPSHOT</version>
+		<!-- Relative path to the parent POM -->
+		<relativePath>../../pom.xml</relativePath>
 	</parent>
-	<groupId>org.scf.springcloud.msvc.hola-mundo</groupId>
-	<artifactId>hola-mundo</artifactId>
+	<groupId>com.example</groupId>
+	<artifactId>graalvm</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>hola-mundo</name>
+	<name>graalvm</name>
 	<description>Demo project for Spring Boot</description>
 	<url/>
 	<licenses>
@@ -35,6 +37,11 @@
 		</dependency>
 
 		<dependency>
+			<groupId>org.projectlombok</groupId>
+			<artifactId>lombok</artifactId>
+			<optional>true</optional>
+		</dependency>
+		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
@@ -44,8 +51,28 @@
 	<build>
 		<plugins>
 			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<configuration>
+					<annotationProcessorPaths>
+						<path>
+							<groupId>org.projectlombok</groupId>
+							<artifactId>lombok</artifactId>
+						</path>
+					</annotationProcessorPaths>
+				</configuration>
+			</plugin>
+			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
+				<configuration>
+					<excludes>
+						<exclude>
+							<groupId>org.projectlombok</groupId>
+							<artifactId>lombok</artifactId>
+						</exclude>
+					</excludes>
+				</configuration>
 			</plugin>
 		</plugins>
 	</build>

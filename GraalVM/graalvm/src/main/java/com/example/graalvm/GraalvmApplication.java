@@ -1,13 +1,13 @@
-package com.ejemplo.hola_mundo;
+package com.example.graalvm;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class HolaMundoApplication {
+public class GraalvmApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(HolaMundoApplication.class, args);
+		SpringApplication.run(GraalvmApplication.class, args);
 	}
 
 }

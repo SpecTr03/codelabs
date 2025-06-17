@@ -16,13 +16,13 @@
     <version>1.0-SNAPSHOT</version>
     <packaging>pom</packaging>
     <modules>
-        <module>hola-mundo</module>
         <module>Comunicacion Sincrona/eureka-server</module>
         <module>Comunicacion Sincrona/producto-service</module>
         <module>Comunicacion Sincrona/pedido-service</module>
         <module>Comunicacion Asincrona/producto-service</module>
         <module>Comunicacion Asincrona/pedido-service</module>
         <module>Virtual Threads/virtual-threads</module>
+        <module>GraalVM/graalvm</module>
     </modules>
 
     <properties>

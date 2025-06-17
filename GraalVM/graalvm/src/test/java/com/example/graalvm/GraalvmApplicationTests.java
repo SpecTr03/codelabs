@@ -1,10 +1,10 @@
-package com.ejemplo.hola_mundo;
+package com.example.graalvm;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class HolaMundoApplicationTests {
+class GraalvmApplicationTests {
 
 	@Test
 	void contextLoads() {

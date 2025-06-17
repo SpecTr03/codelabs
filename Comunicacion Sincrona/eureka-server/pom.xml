@@ -6,6 +6,8 @@
 		<groupId>org.scf.springcloud.msvc</groupId>
 		<artifactId>Codelabs</artifactId>
 		<version>1.0-SNAPSHOT</version>
+		<!-- Relative path to the parent POM -->
+		<relativePath>../../pom.xml</relativePath>
 	</parent>
 	<groupId>com.example</groupId>
 	<artifactId>eureka-server</artifactId>
